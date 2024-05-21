@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Technical University of GUZ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+	body {
+            padding-top: 30px;
+        .nav-pills .nav-link {
+            color: white; 
+            background-color: #799984; 
+        }
+        .nav-pills .nav-link.active {
+            font-weight: bold;
+            color: white; 
+            background-color: #6b8171; 
+        }
+	.nav-link:hover {
+            font-size: larger;
+        }
+        .image-container {
+            width: 1024px;
+            height: 400px;
+            margin: 0 auto;
+            background-image: url('https://i.imgur.com/wvlfUPd.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background-size 0.5s ease, height 0.5s ease;
+        }
+        .image-container:hover {
+            height: 1024px;
+            background-size: contain;
+        }
+	ul li a {
+            background-color: white; 
+            color: #799984; 
+	}
+        @media (min-width: 992px) {
+            .nav-pills {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" href="homepage.html">Home</a>
+                    <a class="nav-link" href="university.html">University</a>
+                    <a class="nav-link" href="academics.html">Academics</a>
+		    <a class="nav-link" href="student.html">Student</a>
+		    <a class="nav-link" href="campuslife.html">CampusLife</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1>Welcome to Technical University of GUZ</h1>
+                <div class="image-container"></div>
+                <ul>
+                    <h3>Announcements</h3>
+                    <li><a href="announcement1.html" target="_self">Add-Drop Lesson Guide<a</a></li>
+                    <li><a href="announcement2.html" target="_self">Preparatory Exam Results</a></li>
+                    <li><a href="announcement3.html" target="_self">2023 Technology Transfer Award</a></li>
+                </ul>
+            </div>
+        </div>
+ <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">© 2024 Technical University of GUZ. All rights reserved.</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

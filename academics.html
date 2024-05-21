@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Technical University of GUZ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+	body {
+            padding-top: 30px;
+        .nav-pills .nav-link {
+            color: white; 
+            background-color: #799984; 
+        }
+        .nav-pills .nav-link.active {
+            font-weight: bold;
+            color: white; 
+            background-color: #6b8171; 
+        }
+	.nav-link:hover {
+            font-size: larger;
+        }
+        @media (min-width: 992px) {
+            .nav-pills {
+                flex-direction: column;
+            }
+        }
+        .academics-table {
+            margin-bottom: 20px;
+        }
+        .table-header {
+            background-color: #799984;
+            text-align: center;
+        }
+ 	.no-wrap {
+            white-space: nowrap; 
+        }
+        td, th {
+            vertical-align: middle;
+        }
+	.person-name, .program-list {
+            max-width: 200px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+	ul {
+            padding-left: 20px; 
+        }
+        ul li {
+            list-style-type: disc; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Navigation Bar -->
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                    <a class="nav-link" href="university.html">University</a>
+                    <a class="nav-link active" href="academics.html">Academics</a>
+		    <a class="nav-link" href="student.html">Student</a>
+		    <a class="nav-link" href="campuslife.html">CampusLife</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1>Academics</h1>
+                <h2>Faculties</h2>
+                <table class="table academics-table">
+                    <thead class="table-header">
+                        <tr>
+                            <th scope="col">Faculty Name</th>
+                            <th scope="col">Dean</th>
+			    <th scope="col">Dean's Photo</th>
+                            <th scope="col">Departments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="person-name no-wrap">Faculty of Engineering</td>
+                            <td class="person-name no-wrap">Dr. Rachal Smith</td>
+			    <td><img src="https://i.imgur.com/6sBTHVF.jpeg" alt="Dean's Photo" class="dean-photo"></td>
+                            <td><ul>
+                                    <li>Computer Science</li>
+                                    <li>Electrical Engineering</li>
+                                    <li>Mechanical Engineering</li>
+                                    <li>Civil Engineering</li>
+                                </ul>
+			    </td>
+			<tr>
+			<tr>
+                            <td class="person-name no-wrap">Faculty of Science</td>
+                            <td class="person-name no-wrap">Dr. Aahan Yadav</td>
+			    <td><img src="https://i.imgur.com/megUNi6.jpeg" alt="Dean's Photo" class="dean-photo"></td>
+                            <td><ul>
+				<li>Mathematics</li>
+				<li>Physics</li>
+				<li>Chemistery</li>
+				<li>Molecular Biology</li>
+			      </ul>
+			   </td>
+			<tr>
+			<tr>
+                            <td class="person-name no-wrap">Faculty of Education</td>
+                            <td class="person-name no-wrap">Dr. Lily Brown</td>
+			    <td><img src="https://i.imgur.com/VXZRykx.jpeg" alt="Dean's Photo" class="dean-photo"></td>
+                            <td><ul>
+				<li>Pre-school Education</li>
+				<li>Social Studies Education</li>
+				<li>German Language Teaching</li>
+				<li>English Language Teaching</li>
+				</ul>
+			    </td>
+			<tr>
+                    </tbody>
+                </table>
+
+                <h2>Institutes</h2>
+                <table class="table academics-table">
+                    <thead class="table-header">
+                        <tr>
+                            <th scope="col">Institute Name</th>
+                            <th scope="col">Director</th>
+			    <th scope="col">Director's Photo</th>
+                            <th scope="col">Programs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                            <td class="person-name no-wrap">Fine Arts Institute</td>
+                            <td class="person-name no-wrap">Dr. Emma Jhonson</td>
+			    <td><img src="https://i.imgur.com/fFwjx9Y.jpeg" alt="Director's Photo Photo" class="director-photo"></td>
+                            <td><ul>
+				<li>Musics</li>
+				<li>Sculpture</li>
+				<li>Painting</li>
+				<li>Performing Arts</li>
+				</ul>
+			     </td>
+			<tr>
+			<tr>
+                            <td class="person-name no-wrap">Health Sciences Institute</td>
+                            <td class="person-name no-wrap">Dr. Mohammad Moussa</td>
+			    <td><img src="https://i.imgur.com/Mvm8N73.jpeg" alt="Director's Photo Photo" class="director-photo"></td>
+                            <td><ul><li>Pharmacology</li><li>Anatomy</li><li>Nursing</li></td>
+			<tr>
+			<tr>
+                            <td class="person-name no-wrap">Social Sciences Institute</td>
+                            <td class="person-name no-wrap">Dr. Danniel Flink</td>
+                            <td><img src="https://i.imgur.com/xaSnpu3.jpeg" alt="Director's Photo Photo" class="director-photo"></td>
+                            <td><ul>
+				<li>History</li>
+				<li>Literature</li>
+				<li>Philosophy</li>
+				<li>Business</li>
+				<li>Archaeology</li>
+				</ul>
+			     </td>
+			<tr>
+                    </tbody>
+                </table>
+
+                <h2>Vocational Higher Schools</h2>
+                <table class="table academics-table">
+                    <thead class="table-header">
+                        <tr>
+                            <th scope="col">School Name</th>
+                            <th scope="col">Head</th>
+			    <th scope="col">Head's Name</th>
+                            <th scope="col">Programs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                            <td>New York Vocational Higher Schools</td>
+                            <td class="person-name no-wrap">Dr. Kiara Bandi</td>
+                            <td><img src="https://i.imgur.com/JrLW5i4.jpeg" alt="Director's Photo Photo" class="director-photo"></td>
+                            <td><ul>
+				<li>Childcare</li>
+				<li>Secretarial</li>
+				<li>Management and Organization</li>
+				</ul>
+			    </td>
+			<tr>
+			<tr>
+                            <td>Miami Vocational Higher Schools</td>
+                            <td class="person-name no-wrap">Dr. Tamay Durgun</td>
+                            <td><img src="https://i.imgur.com/vpanG2n.jpeg" alt="Director's Photo Photo" class="director-photo"></td>
+                            <td><ul>
+				<li>Maritime Business</li>
+				<li>Ship Machines</li>
+				<li>Marine Sciences</li>
+				</ul>
+			    </td>
+			<tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">© 2024 Technical University of GUZ. All rights reserved.</span>
+            </div>
+        </footer>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

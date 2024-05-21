@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Technical University of GUZ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #799984; 
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header img {
+            width: 100px; 
+            height: auto;
+        }
+        .header h1 {
+            color: #ffffff; 
+        }
+        .login-form {
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 50px; 
+        }
+	.btn-primary{
+            background-color: #799984; 
+	    border-color: #799984;
+            color: white; 
+        @media (min-width: 992px) {
+            .nav-pills {
+                flex-direction: column;
+            }
+        }
+        .nav-link:hover {
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="uni_arma.png" alt="University Logo"> 
+            <h1>Technical University of GUZ</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form action="homepage.html" method="POST">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+ <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">© 2024 Technical University of GUZ. All rights reserved.</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University - Technical University of GUZ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+	body {
+            padding-top: 30px;
+ 	.nav-pills .nav-link {
+            color: white; 
+            background-color: #799984; 
+        }
+        .nav-pills .nav-link.active {
+            font-weight: bold;
+            color: white; 
+            background-color: #6b8171;
+	}
+	.nav-link:hover {
+            font-size: larger;
+        }
+        .transparent-on-hover:hover {
+            opacity: 0.5;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .show-more {
+            display: none;
+        }
+        @media (min-width: 992px) {
+            .nav-pills {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script>
+        function toggleShowMore() {
+            var showMoreText = document.getElementById("show-more");
+            if (showMoreText.style.display === "none") {
+                showMoreText.style.display = "inline";
+            } else {
+                showMoreText.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                    <a class="nav-link active" href="university.html">University</a>
+                    <a class="nav-link" href="academics.html">Academics</a>
+		    <a class="nav-link" href="student.html">Student</a>
+		    <a class="nav-link" href="campuslife.html">CampusLife</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1>About Us</h1>
+                <p>
+                           The Technical University of GUZ was founded in 1964 with the aim to provide top-tier education and research opportunities. Our campus hosts a diverse international community and offers a wide range of programs.
+                            <span id="show-more" class="show-more">
+                                At Technical University of GUZ, our mission is to cultivate leaders who will pioneer new technologies and solutions that address real-world challenges. We achieve this through a rigorous academic curriculum, a vibrant research environment, and a commitment to social responsibility. Our educational philosophy is based on nurturing critical thinking, fostering interdisciplinary learning, and promoting hands-on experiences that stretch beyond the traditional classroom environment.With a wide array of undergraduate, postgraduate, and doctoral programs, Technical University of GUZ offers cutting-edge courses in engineering, computer science, biotechnology, applied sciences, and more. Our programs are designed to equip students with both theoretical knowledge and practical skills. Each department boasts state-of-the-art facilities, laboratories, and equipment, facilitating an ideal environment for active learning and groundbreaking research.
+				Our esteemed faculty includes scholars renowned worldwide for their expertise and contributions to their fields. The faculty's dedication to teaching and research creates a dynamic learning environment where students can engage with complex problems and innovate solutions.
+				Research at Technical University of GUZ is at the core of our academic approach. Our researchers tackle the world’s most pressing issues, from climate change and sustainable development to artificial intelligence and healthcare innovations. We have partnerships with leading corporations, government agencies, and international organizations, enhancing the scope and impact of our research. Our on-campus incubators support students and faculty alike in transforming their ideas into successful businesses.
+				Our commitment to the community is demonstrated through extensive outreach programs, collaborations with local schools, and public seminars that disseminate research findings and scholarly knowledge. We believe in giving back to the community that hosts us, ensuring that the benefits of our research and educational prowess extend beyond our campus.
+				Explore Technical University of GUZ where curiosity is nurtured, innovation is encouraged, and leaders are made. We are more than just a university; we are a community that fosters growth, embraces technology, and shapes the future. Visit our admissions page to learn more about how you can become part of this vibrant educational journey.
+                            </span>
+                        </p>
+                <button onclick="toggleShowMore()">Show More/Less</button>
+                <div id="show-more" class="show-more">
+                </div>
+                <img src="https://i.imgur.com/I38Ow3M.jpeg" alt="University" class="img-fluid transparent-on-hover">
+            </div>
+        </div>
+ <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">© 2024 Technical University of GUZ. All rights reserved.</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
